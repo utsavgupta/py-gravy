@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to PyGravy’s documentation! &mdash; PyGravy a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="PyGravy a documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">PyGravy a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-pygravy-s-documentation">
+<h1>Welcome to PyGravy&#8217;s documentation!<a class="headerlink" href="#welcome-to-pygravy-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>The library lets you generate gravatar links.</p>
+</div>
+<div class="section" id="pygravy-auto-members">
+<h1>PyGravy &#8211; auto members<a class="headerlink" href="#pygravy-auto-members" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pygravy.PyGravy">
+<em class="property">class </em><tt class="descclassname">pygravy.</tt><tt class="descname">PyGravy</tt><big>(</big><em>email</em>, <em>use_https=False</em><big>)</big><a class="reference internal" href="_modules/pygravy.html#PyGravy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pygravy.PyGravy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pygravy.PyGravy.avatar_default">
+<tt class="descname">avatar_default</tt><a class="reference internal" href="_modules/pygravy.html#PyGravy.avatar_default"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pygravy.PyGravy.avatar_default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default avatar property. Lets you set the fallback avatar.
+You can use thr gravatar defaults identicon, monstericon, 404,
+mm, wavatar and retro.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gravatar</span><span class="o">.</span><span class="n">avatar_default</span> <span class="o">=</span> <span class="s">&#39;somesite.com/image1.jpg&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gravatar</span><span class="o">.</span><span class="n">avatar_default</span>
+<span class="go">&#39;somesite.com/image1.jpg&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pygravy.PyGravy.avatar_rating">
+<tt class="descname">avatar_rating</tt><a class="reference internal" href="_modules/pygravy.html#PyGravy.avatar_rating"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pygravy.PyGravy.avatar_rating" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rating property. Select from g, pg, r and x.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gravatar</span><span class="o">.</span><span class="n">avatar_rating</span> <span class="o">=</span> <span class="s">&#39;r&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gravatar</span><span class="o">.</span><span class="n">avatar_rating</span>
+<span class="go">&#39;r&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygravy.PyGravy.avatar_set_force_load">
+<tt class="descname">avatar_set_force_load</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/pygravy.html#PyGravy.avatar_set_force_load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pygravy.PyGravy.avatar_set_force_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the fallback avatar by default.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pygravy.PyGravy.avatar_size">
+<tt class="descname">avatar_size</tt><a class="reference internal" href="_modules/pygravy.html#PyGravy.avatar_size"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pygravy.PyGravy.avatar_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Size property. Assign the desired size of the avatar (in pixels).</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gravatar</span><span class="o">.</span><span class="n">avatar_size</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gravatar</span><span class="o">.</span><span class="n">avatar_size</span>
+<span class="go">128</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygravy.PyGravy.avatar_unset_force_load">
+<tt class="descname">avatar_unset_force_load</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/pygravy.html#PyGravy.avatar_unset_force_load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pygravy.PyGravy.avatar_unset_force_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reverses the action of avatar_force_load.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygravy.PyGravy.avatar_url">
+<tt class="descname">avatar_url</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/pygravy.html#PyGravy.avatar_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pygravy.PyGravy.avatar_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a link to the desired gravatar.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pygravy.PyGravy.email_hash">
+<tt class="descname">email_hash</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/pygravy.html#PyGravy.email_hash"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pygravy.PyGravy.email_hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns the md5 hexadecimal digest of the email address.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="under-the-hood">
+<h1>Under the hood<a class="headerlink" href="#under-the-hood" title="Permalink to this headline">¶</a></h1>
+<p>The parameters are stored in a dictionary named <em>params</em>. So executing the following piece of code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gravatar</span><span class="o">.</span><span class="n">rating</span> <span class="o">=</span> <span class="s">&#39;pg&#39;</span>
+</pre></div>
+</div>
+<p>Would result in gravatar.params[&#8216;r&#8217;] = &#8216;pg&#8217;</p>
+<p>You can filter the parameters using the set of common filters (documented in the next section) provided with the library or you can write your own filters. They are used for validating or modifying user entered data. For instance you might want to sanitize the default avatar url. By default the library filters 3 parameters viz, default avatar url parameter, rating parameter and size parameter.</p>
+<p>The filters are stored in a dictionary named <em>param_filters</em>. Adding/Removing filters is pretty simple.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gravatar</span><span class="o">.</span><span class="n">param_filters</span><span class="p">[</span><span class="s">&#39;r&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">your_custom_filter_function</span>           <span class="c"># Adding</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">del</span><span class="p">(</span><span class="n">gravatar</span><span class="o">.</span><span class="n">param_filters</span><span class="p">[</span><span class="s">&#39;r&#39;</span><span class="p">])</span>                                                            <span class="c"># Removing</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="common-filters-auto-members">
+<h1>Common Filters &#8211; auto members<a class="headerlink" href="#common-filters-auto-members" title="Permalink to this headline">¶</a></h1>
+<p>What are filters? A filter is a function which takes a parameter as an argument and either validates it or modifies it. If it&#8217;s a validator then it should raise an exception if the paramter is invalid else it should return the parameter. Modifiers modify the parameter and return it.</p>
+<span class="target" id="module-common_filters"></span><dl class="function">
+<dt id="common_filters.sanitize_url">
+<tt class="descclassname">common_filters.</tt><tt class="descname">sanitize_url</tt><big>(</big><em>url</em><big>)</big><a class="reference internal" href="_modules/common_filters.html#sanitize_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#common_filters.sanitize_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a sanitized url.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="common_filters.validate_rating">
+<tt class="descclassname">common_filters.</tt><tt class="descname">validate_rating</tt><big>(</big><em>rating</em><big>)</big><a class="reference internal" href="_modules/common_filters.html#validate_rating"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#common_filters.validate_rating" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises an exception if the given rating is anything other than g, pg, r or x.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="common_filters.validate_size">
+<tt class="descclassname">common_filters.</tt><tt class="descname">validate_size</tt><big>(</big><em>size</em><big>)</big><a class="reference internal" href="_modules/common_filters.html#validate_size"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#common_filters.validate_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises an exception if the size is lesser than 1 or greater than 512.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to PyGravy&#8217;s documentation!</a></li>
+<li><a class="reference internal" href="#pygravy-auto-members">PyGravy &#8211; auto members</a></li>
+<li><a class="reference internal" href="#under-the-hood">Under the hood</a></li>
+<li><a class="reference internal" href="#common-filters-auto-members">Common Filters &#8211; auto members</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">PyGravy a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Utsav Gupta.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

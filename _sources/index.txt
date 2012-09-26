@@ -1,0 +1,47 @@
+.. PyGravy documentation master file, created by
+   sphinx-quickstart on Tue Sep 25 10:41:07 2012.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to PyGravy's documentation!
+===================================
+The library lets you generate gravatar links.
+
+
+PyGravy -- auto members
+=======================
+
+.. autoclass:: pygravy.PyGravy
+	:members:
+
+Under the hood
+==============
+The parameters are stored in a dictionary named *params*. So executing the following piece of code:
+
+>>> gravatar.rating = 'pg'
+
+Would result in gravatar.params['r'] = 'pg'
+
+You can filter the parameters using the set of common filters (documented in the next section) provided with the library or you can write your own filters. They are used for validating or modifying user entered data. For instance you might want to sanitize the default avatar url. By default the library filters 3 parameters viz, default avatar url parameter, rating parameter and size parameter.
+
+The filters are stored in a dictionary named *param_filters*. Adding/Removing filters is pretty simple.
+
+>>> gravatar.param_filters['r'] = your_custom_filter_function		# Adding
+>>> del(gravatar.param_filters['r'])								# Removing
+
+Common Filters -- auto members
+==============================
+
+What are filters? A filter is a function which takes a parameter as an argument and either validates it or modifies it. If it's a validator then it should raise an exception if the paramter is invalid else it should return the parameter. Modifiers modify the parameter and return it.
+
+.. automodule:: common_filters
+	:members:
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
